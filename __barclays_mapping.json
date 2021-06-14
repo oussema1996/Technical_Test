@@ -1,0 +1,105 @@
+{
+  "GLOBAL": {
+	"STATIC_FIELDS": {
+		"CLIENT_ID": "BARCLAYS",
+		"UMBRELLA_ID": 378,
+		"TA_CODE": 66,
+		"CLIENT_FOLDER": "BARCLAYS PORTFOLIO",
+		"ADMIN_ID": "NORTHERN TRUST"
+	}
+  },  
+  "NAV_EMAIL_EXTRACTOR": {
+	"DATA_FILE_INFO": {
+		"FILE_LOOKUP_STRING": "BWLUXRPF PriceFile",
+		"FILE_LOOKUP_EXTENSION": "csv",
+		"FILE_HEADER_LINE": 1,
+		"FILE_INSERT_SHEET": 0,
+		"FILE_CONVERSION": {
+			"CONVERSION_NEEDED": "N",
+			"ENGINE": ""
+			},
+		"FILE_PROTECTION": {
+			"PASSWORD_NEEDED": "N",
+			"PASSWORD": "",
+			"ENGINE": ""
+      }
+	},
+    "EMAIL_EXTRACTION_INFO": {
+	  "EMAIL_LOOKUP_ACCOUNT": "",
+      "EMAIL_LOOKUP_STRING": ["BWLUXRPF PriceFile", "BWLAF PriceFile"],
+	  "EMAIL_LOOKUP_FILE": ["BWLUXRPF PriceFile", "BWLAF PriceFile"]
+    },
+    "STATIC_FIELDS": {
+	  "PYTHON_EMAIL_EXTRACT_TYPE_ID": 1
+    },
+	"MAPPING_EXCEPTIONS": {
+    "COLUMN_FIXES": {
+    },
+    "RULE_FIXES": {
+    }
+   }
+  },  
+  "SUB_RED_TOOL": {
+    "CLIENT_ID": "BARCLAYS",
+	"DATA_FILE_INFO": {
+		"FILE_LOOKUP_STRING": "NT_RPFBPL_CF",
+		"FILE_LOOKUP_EXTENSION": "csv",
+		"FILE_HEADER_LINE": 1,
+		"FILE_INSERT_SHEET": 0,
+		"FILE_CONVERSION": {
+			"CONVERSION_NEEDED": "N",
+			"ENGINE": ""
+			},
+		"FILE_PROTECTION": {
+			"PASSWORD_NEEDED": "N",
+			"PASSWORD": "",
+			"ENGINE": ""
+      }
+	},
+    "EMAIL_EXTRACTION_INFO": {
+      "EMAIL_LOOKUP_STRING": "Barclays Portfolios SICAV - Confirmed cash flow",
+	  "EMAIL_LOOKUP_FILE": ""
+    },
+    "STATIC_FIELDS": {
+	  "PYTHON_EMAIL_EXTRACT_TYPE_ID": 2
+    },
+	"MAPPING_EXCEPTIONS": {
+    "COLUMN_FIXES": {
+    },
+    "RULE_FIXES": {
+    }
+   }
+  },
+  "SHARE_REGISTER_TOOL": {
+    "CLIENT_ID": "BARCLAYS PORTFOLIO",
+	"DATA_FILE_INFO": {
+		"FILE_LOOKUP_STRING": "BPL_Shares",
+		"FILE_LOOKUP_EXTENSION": "xls",  
+		"FILE_HEADER_LINE": 0,
+		"FILE_INSERT_SHEET": 0,
+		"FILE_CONVERSION": {
+			"CONVERSION_NEEDED": "N",
+			"ENGINE": ""
+			},
+		"FILE_PROTECTION": {
+			"PASSWORD_NEEDED": "N",
+			"PASSWORD": "",
+			"ENGINE": ""
+      }
+	},
+    "EMAIL_EXTRACTION_INFO": {
+      "EMAIL_LOOKUP_ACCOUNT": "FRMC_TATEAM",
+      "EMAIL_LOOKUP_STRING": "Barclays Portfolio - Share",
+      "EMAIL_LOOKUP_FILE": "PL_Shares"
+    },
+    "STATIC_FIELDS": {
+	  "PYTHON_EMAIL_EXTRACT_TYPE_ID": 4
+    },
+	"MAPPING_EXCEPTIONS": {
+    "COLUMN_FIXES": {
+    },
+    "RULE_FIXES": {
+    }
+   }
+  }
+}
